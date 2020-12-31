@@ -8,8 +8,8 @@ A typical setup looks like this:
 *scripts/main.js*:
 ```js
 
-require("blocks.js");
-require("items.js");
+require("blocks");
+require("items");
 
 ```
 
@@ -26,8 +26,8 @@ myBlock.health = 200;
 *scripts/items.js*:
 ```js
 
-const terribleium = Item("terribleium");
-terribleium.color = Color.valueOf("ff0000")
+const terribleium = new Item("terribleium");
+terribleium.color = Color.valueOf("ff0000");
 //...
 
 ```
